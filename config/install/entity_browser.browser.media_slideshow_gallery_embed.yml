@@ -1,0 +1,42 @@
+uuid: a84df0f1-9d04-4c52-a95d-d7b281216ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.embed_slideshow
+  module:
+    - entity_browser_entity_form
+    - views
+name: media_slideshow_gallery_embed
+label: 'Media Slideshow Gallery Embed'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  79f42403-1d68-4a48-859a-610e649229d3:
+    settings:
+      view: embed_slideshow
+      view_display: entity_browser_gallery
+      submit_text: 'Select gallery'
+      auto_select: false
+    uuid: 79f42403-1d68-4a48-859a-610e649229d3
+    weight: -9
+    label: 'Select existing gallery'
+    id: view
+  b4df84e2-9268-47f8-b7be-d3cb963b6642:
+    settings:
+      entity_type: media
+      bundle: slideshow_gallery
+      form_mode: default
+      submit_text: 'Create gallery'
+    uuid: b4df84e2-9268-47f8-b7be-d3cb963b6642
+    weight: -10
+    label: 'Create new gallery'
+    id: entity_form

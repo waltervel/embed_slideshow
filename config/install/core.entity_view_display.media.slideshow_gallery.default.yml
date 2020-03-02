@@ -1,0 +1,28 @@
+uuid: 7352f709-52cd-4c4d-b136-79f0ad5a3139
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.slideshow_gallery.field_media_slideshow
+    - media.type.slideshow_gallery
+id: media.slideshow_gallery.default
+targetEntityType: media
+bundle: slideshow_gallery
+mode: default
+content:
+  field_media_slideshow:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

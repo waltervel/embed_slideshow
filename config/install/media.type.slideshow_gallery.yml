@@ -1,0 +1,19 @@
+uuid: f5fa0b62-34e9-450d-a8ef-d2be11b3f0dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_slideshow
+third_party_settings:
+  crop:
+    image_field: null
+id: slideshow_gallery
+label: 'Slideshow gallery'
+description: 'Use local images for reusable gallery media.'
+source: slideshow
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_slideshow
+field_map: {  }

@@ -1,0 +1,27 @@
+uuid: 640cc566-8dc9-4038-a88b-c981b716854c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.media_slideshow_gallery_embed
+    - media.type.slideshow_gallery
+  module:
+    - entity_embed
+    - media
+label: Gallery
+id: gallery
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - slideshow_gallery
+  display_plugins:
+    - 'view_mode:media.full'
+  entity_browser: media_slideshow_gallery_embed
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_location: path
+icon_uuid: null
+icon_path: /modules/custom/wmi_ckeditor/assets/ckeditor/icons/image-gallery.svg
