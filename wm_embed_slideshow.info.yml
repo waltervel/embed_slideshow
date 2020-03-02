@@ -1,0 +1,8 @@
+name: 'WarnerMedia Embed Slideshow'
+type: module
+description: 'Provides an embed slideshow gallery button for ckeditor.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - embed
+  - media_entity_slideshow
