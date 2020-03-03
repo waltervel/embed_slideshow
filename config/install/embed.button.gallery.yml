@@ -23,4 +23,4 @@ type_settings:
 icon: {  }
 icon_location: path
 icon_uuid: null
-icon_path: /modules/custom/wmi_ckeditor/assets/ckeditor/icons/image-gallery.svg
+icon_path: /modules/custom/wm_gallery_embed/assets/ckeditor/icons/image-gallery.svg

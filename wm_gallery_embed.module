@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains wm_embed_slideshow.module.
+ * Contains wm_gallery_embed.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,10 +10,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function wm_embed_slideshow_help($route_name, RouteMatchInterface $route_match) {
+function wm_gallery_embed_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the wm_embed_slideshow module.
-    case 'help.page.wm_embed_slideshow':
+    // Main module help for the wm_gallery_embed module.
+    case 'help.page.wm_gallery_embed':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Creates an embed slideshow gallery button for the ckeditor.') . '</p>';
